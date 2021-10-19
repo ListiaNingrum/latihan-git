@@ -1,30 +1,26 @@
 <?php
+
 namespace App\Database\Seeds;
 
-use App\Models\Pengguna;
 use CodeIgniter\Database\Seeder;
 
 class PenggunaSeeder extends Seeder
-{   
+{
     public function run()
     {
+        //
         $data = [
             [
-                'nama' => 'admin',
-                'password' => 'admin'
-
+                'nama'      => 'Listia Ningrum',
+                'password'  => md5('12200765')
             ],
             [
-                'nama'     => 'owner',
-                'password' => md5('12345')
+                'nama'      => 'creator',
+                'password'  => md5('23456')
             ],
             [
-                'nama'     => 'creator',
-                'password' => md5('23456')
-            ],
-            [
-                'nama'     => 'marketing',
-                'password' => md5('34567')
+                'nama'      => '12200765',
+                'password'  => md5('Listia Ningrum')
             ]
         ];
 
